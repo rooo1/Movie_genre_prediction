@@ -1,1 +1,2 @@
 modelfiles/* filter=lfs diff=lfs merge=lfs -text
+templates/* filter=lfs diff=lfs merge=lfs -text
