@@ -7,3 +7,33 @@ pandas==1.3.3
 numpy==1.21.3
 joblib==1.1.0
 gunicorn
+from flask import Flask, request, render_template,jsonify
+import requests
+from bs4 import BeautifulSoup
+import re
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+import joblib
+import warnings
+warnings.filterwarnings ("ignore")
+import pandas as pd
+import numpy as np
+import json
+import nltk
+import re
+import csv
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MultiLabelBinarizer
+from sklearn.ensemble import RandomForestClassifier
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from sklearn.metrics import confusion_matrix
+from ast import literal_eval
+from sklearn.linear_model import LogisticRegression
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.model_selection import cross_validate
+from sklearn.metrics import f1_score, log_loss, precision_score, recall_score, make_scorer, accuracy_score, classification_report, confusion_matrix
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.decomposition import TruncatedSVD
