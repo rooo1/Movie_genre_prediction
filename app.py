@@ -30,11 +30,11 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.decomposition import TruncatedSVD
 
 
-multilabel_binarizer1= joblib.load("Movie_genre_prediction/modelfiles/multilabel_binarizer1.pkl")
-tfidf_vectorizer = joblib.load("Movie_genre_prediction/modelfiles/tfidf_vectorizer.pkl")
-bow_vectorizer = joblib.load("Movie_genre_prediction/modelfiles/bow_vectorizer.pkl")
-clf_tfidf = joblib.load("Movie_genre_prediction/modelfiles/clf_tfidf.pkl")
-clf_bow = joblib.load("Movie_genre_prediction/modelfiles/clf_bow.pkl")
+multilabel_binarizer1= joblib.load("modelfiles/multilabel_binarizer1.pkl")
+tfidf_vectorizer = joblib.load("modelfiles/tfidf_vectorizer.pkl")
+bow_vectorizer = joblib.load("modelfiles/bow_vectorizer.pkl")
+clf_tfidf = joblib.load("modelfiles/clf_tfidf.pkl")
+clf_bow = joblib.load("modelfiles/clf_bow.pkl")
 
 def filter_synopsis(synopsis):
     synopsis = re.sub("\'","", synopsis)
